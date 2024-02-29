@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainGame {
+        outline: auto;
+        width: 99%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top {
+        width: 100%;
+        height: auto;
+        outline: auto;
+    }
+    .midplayers{
+        width: 100%;       
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+    .midplayers > *{
+        height: auto;
+        outline: auto;
+        display: flex;
+        flex-direction: column;    
+    }
+    .card{
+        width: 100px;
+        aspect-ratio: 0.71;
+        outline: auto;
+        margin: 2px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .card:hover{
+        box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.445);
+    }
+    button{
+        width: 100px;
+        height: 50px; 
+        background-color: skyblue;
+        border-color: transparent;
+        border-radius: 0.5rem;
+    }
+    .player-played{
+        outline: auto;
+    }
+
+ 
+</style>
+
+<body>
+            <button onclick="init()">Init</button>
+            <button onclick="giveCards()">Give Cards</button>
+
+    <div class="mainGame" id="mainGame">
+
+    </div>   
+</body>
+<script src="gameplay.js">
+
+</script>
+
+</html>
